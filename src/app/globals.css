@@ -1,0 +1,12 @@
+@import "tailwindcss";
+:root { --bg:#f5f2eb; --text:#20211e; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--text); overflow-x:hidden; font-family:Arial,Helvetica,sans-serif; }
+::selection { background:#252724; color:#fff; }
+nav [data-hero-link] { opacity:1; transform:none; }
+.image-ribbon { animation:image-ribbon 28s linear infinite !important; will-change:transform; }
+.image-ribbon:hover { animation-play-state:paused; }
+.image-ribbon [data-tile] { transition:width .12s linear,height .12s linear; }
+@keyframes image-ribbon { from { transform:translate3d(-50%,0,0) } to { transform:translate3d(0,0,0) } }
+@keyframes fade { from { opacity:0; transform:scale(1.025) } to { opacity:1; transform:scale(1) } }
+@media (prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
