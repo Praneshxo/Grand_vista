@@ -10,3 +10,5 @@ nav [data-hero-link] { opacity:1; transform:none; }
 @keyframes image-ribbon { from { transform:translate3d(-50%,0,0) } to { transform:translate3d(0,0,0) } }
 @keyframes fade { from { opacity:0; transform:scale(1.025) } to { opacity:1; transform:scale(1) } }
 @media (prefers-reduced-motion:reduce){*,::before,::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+@media (min-width:768px){#projects article:nth-child(even)>:first-child{order:initial}#projects article:nth-child(even)>:nth-child(2){order:initial}#projects article .fade-in img{height:460px;aspect-ratio:auto}#projects article{align-items:center}.bg-\[\#e8e3da\] .bg-\[\#252724\]{height:390px}.bg-\[\#e8e3da\] .bg-\[\#252724\]>img{height:390px}.bg-\[\#252724\]>div{min-height:300px;padding:2.5rem}.bg-\[\#252724\]>div>p{font-size:1.125rem}footer>div.border-t>p{white-space:nowrap;font-size:18vw}}
+.ribbon-viewport{contain:layout paint}
